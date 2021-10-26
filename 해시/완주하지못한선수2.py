@@ -1,4 +1,5 @@
 def solution(participant, completion):
+    #해시는 고유한 정수를 부여하는 함수
     temp = 0
     dic = {}
     for p in participant:
