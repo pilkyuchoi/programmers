@@ -1,4 +1,4 @@
-#스택큐는 pop으로
+#스택큐는 pop으로, pop(0)하면 맨 앞에꺼
 #day를 저장해놓고 쓰기
 
 def solution(progresses, speeds):
