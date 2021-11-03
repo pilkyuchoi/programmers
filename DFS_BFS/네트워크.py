@@ -17,3 +17,6 @@ def solution(n, computers):
             answer += 1
 
     return answer
+
+
+    asdasda
