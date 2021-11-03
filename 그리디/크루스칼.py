@@ -9,6 +9,7 @@ def find_parent(parent, x):
 def union_parent(parent, a, b):
     a = find_parent(parent, a)
     b = find_parent(parent, b)
+    # 큰 쪽이 작은 쪽을 부모로 삼게 하기
     if a < b:
         parent[b] = a
     else:
@@ -16,7 +17,7 @@ def union_parent(parent, a, b):
 
 # 노드의 개수와 간선(Union 연산)의 개수 입력받기
 v, e = map(int, input().split())
-parent = [0] * (v+1) # 부모 테이블 초기화하기
+parent = [0] * (v+1) # 빈 부모 테이블 만들기
 
 # 모든 간선을 담을 리스트와, 최종 비용을 담을 변수
 edges = []
