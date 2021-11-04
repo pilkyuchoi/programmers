@@ -36,3 +36,22 @@ visited = [False] * 9
 
 #정의된 BFS 함수 호출
 bfs(graph, 1, visited)
+
+
+
+#리스트 사용
+def bfs(graph, start):
+    visited = []
+    queue = []
+
+    queue.append(start)
+
+    while queue:
+        node = queue.pop(0)
+        if node not in visited:
+            visited.append(node)
+            queue.extend(graph[node])
+
+    return visited
+
+bfs(graph, 1)

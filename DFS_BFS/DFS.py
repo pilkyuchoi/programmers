@@ -1,5 +1,4 @@
-#스택 사용
-
+#재귀
 def dfs(graph, v, visited):
     #현재 노드를 방문처리
     visited[v] = True
@@ -27,3 +26,21 @@ visited = [False] * 9
 
 #정의된 DFS 함수 호출
 dfs(graph, 1, visited)
+
+
+# 스택을 활용한 dfs 구현
+def dfs(graph, start):
+    visited = []
+    stack = []
+
+    stack.append(start)
+
+    while stack:
+        node = stack.pop()
+        if node not in visited:
+            visited.append(node)
+            stack.extend(graph[node]) # 앞에서부터 순회하고 싶으면 reversed
+
+    return visited
+
+dfs(graph, 1)
