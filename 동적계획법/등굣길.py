@@ -26,8 +26,3 @@ def solution(m, n, puddles):
     return dp[n][m] % 1000000007
 
 solution(m, n, puddles)
-
-
-dp = [[0] * (m + 1) for i in range(n + 1)]
-
-dp
