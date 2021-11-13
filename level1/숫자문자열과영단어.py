@@ -1,14 +1,23 @@
-# 이거랑은 상관없지만 정규식 외우자
+numbers = [1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5]	
+hand = "right"
 
-l = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
-dic = {}
-for a, i in zip(l, range(10)):
-    dic[a] = str(i)
+def solution(numbers, hand):
+    answer = ''
 
-def solution(s):
-    for a in l:
-        if a in s:
-            s = s.replace(a, dic[a])
-    
-    return int(s)
+    hand = 'L' if hand == 'left' else 'R'
 
+    left = '*'
+    right = '#'
+    for n in numbers:
+        if n in [1, 4, 7]:
+            answer + 'L'
+            left = n
+        elif n in [3, 6, 9]:
+            answer + 'R'
+            right = n
+        elif n == 2:
+            if left in [1, 5]:
+                if right == 3:
+                    answer + 
+
+    return answer
