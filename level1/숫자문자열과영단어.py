@@ -18,6 +18,5 @@ def solution(numbers, hand):
         elif n == 2:
             if left in [1, 5]:
                 if right == 3:
-                    answer + 
 
     return answer
