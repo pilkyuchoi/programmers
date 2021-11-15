@@ -7,8 +7,6 @@ def isPrime(n):
             return False # i로 나누어 떨어지면 소수가 아니므로 False 리턴
     
     return True # False가 리턴되지 않고 for문을 빠져나왔다면 소수이므로 True 리턴
-  
-
 
 # 제곱근까지만 보고 소수를 판별하는 함수
 import math
@@ -20,12 +18,10 @@ def isPrime(n):
 
     return True
 
-
-
 # 소수 판별 함수(에라토스테네스의 체)
 import math
 
-def isPrime(n):
+def isPrime2(n):
     # 2부터 n까지의 모든 수에 대하여 소수 판별
     array = [True for i in range(n+1)] # 처음엔 모든 수가 소수(True)인 것으로 초기화(0과 1은 제외)
 
