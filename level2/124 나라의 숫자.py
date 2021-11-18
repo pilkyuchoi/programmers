@@ -19,4 +19,4 @@ def solution(n):
 
     return answer
 
-        
+# 효율성 틀림
