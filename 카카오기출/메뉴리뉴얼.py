@@ -30,3 +30,4 @@ def solution(orders, course):
             pass
         
     return sorted(answer)
+
