@@ -1,6 +1,3 @@
-left = 13
-right = 17
-
 def solution(left, right):
     answer = 0
     for i in range(left, right+1):
@@ -15,5 +12,3 @@ def solution(left, right):
             answer -= i
 
     return answer
-
-solution(left, right)
