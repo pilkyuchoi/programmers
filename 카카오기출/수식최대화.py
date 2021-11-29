@@ -4,7 +4,6 @@
 expression = "100-200*300-500+20"
 
 # '-100*-520'.count('-')
- 
 from itertools import permutations
 import re
 
