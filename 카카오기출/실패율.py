@@ -17,3 +17,4 @@ def solution(N, stages):
             rate.append((fail / success, i)) 
             
     return [rank[1] for rank in sorted(rate, reverse=True, key=lambda x: (x[0], -x[1]))]
+     

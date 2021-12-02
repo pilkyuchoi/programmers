@@ -20,4 +20,4 @@ def solution(answers):
         if max(scores) == score:
             result.append(idx)
 
-    return result
+    return result 

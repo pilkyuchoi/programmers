@@ -21,6 +21,7 @@ def solution(s):
 
     if len(s) == 1:
         answer = s
-
+ 
     return len(answer)
 
+ 

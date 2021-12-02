@@ -15,4 +15,4 @@ def solution(record):
         elif words[0] == 'Leave':
             answer.append(f'{dic[words[1]]}님이 나갔습니다.')
 
-    return answer
+    return answer 

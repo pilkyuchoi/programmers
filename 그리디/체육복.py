@@ -22,4 +22,4 @@ def solution(n, lost, reserve):
 
     answer = n - len(lost)
 
-    return answer
+    return answer 

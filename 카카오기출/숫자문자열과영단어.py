@@ -33,7 +33,7 @@ def solution(numbers, hand):
                     answer += 'L'
                     left = n
                 else:
-                    answer += 'R'
+                    answer += 'R' 
                     right = n
 
     return answer
