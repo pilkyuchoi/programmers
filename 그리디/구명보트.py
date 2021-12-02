@@ -18,4 +18,4 @@ def solution(people, limit):
             people.popleft()
             answer += 1
 
-    return answer
+    return answer 
