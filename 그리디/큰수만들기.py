@@ -11,4 +11,4 @@ def solution(number, k):
                 
         answer.append(num)
 
-    return ''.join(answer[:len(number)-k]) 
+    return ''.join(answer[:len(number)-k])  
