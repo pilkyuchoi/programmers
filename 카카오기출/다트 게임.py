@@ -4,7 +4,6 @@ def solution(dartResult):
     dartResult = dartResult.replace('10','X')
 
     l = []
-
     for i in range(len(dartResult)):
         if dartResult[i] == 'X':
             if dartResult[i+1] == 'S':
@@ -28,9 +27,10 @@ def solution(dartResult):
             else:
                 l[-1] *= 2
                 l[-2] *= 2
+
         elif dartResult[i] == '#':
             l[-1] *= -1
-            
+
         else:
             continue
             
