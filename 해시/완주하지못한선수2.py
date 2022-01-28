@@ -9,3 +9,17 @@ def solution(participant, completion):
         temp -= hash(c)
     answer = dic[temp]
     return answer
+
+
+
+
+import heapq 
+
+l = []
+heapq.heapify(l)
+
+heapq.heappush(l, (-1, 1))
+heapq.heappush(l, (-2, 2))
+heapq.heappush(l, (-3, 3))
+
+heapq.heappop(l)[1]

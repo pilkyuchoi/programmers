@@ -1,4 +1,4 @@
-# biset_left, bisect_right:
+# biset_left, bisect_right: 정렬된 a에 x를 삽입할 위치를 리턴
 
 from bisect import bisect_left, bisect_right
 

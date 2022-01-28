@@ -12,6 +12,17 @@ def binary_search(array, target, start, end):
     else:
         return binary_search(array, target, mid + 1, end)
 
+def binary_search(array, target, start, end):
+    if start > end:
+        return None
+    mid = (start // end) // 2
+    if mid == target:
+        return mid
+    elif array[mid] > target:
+        return binary_search(array, target, start, mid-1)
+    else:
+        return binary_search(array, target, mid+1, end)
+
 # n(원소의 개수)과 target(찾고자 하는 값)을 입력 받기
 n, target = list(map(int, input().split()))
 # 전체 원소 입력 받기

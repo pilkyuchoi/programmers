@@ -18,6 +18,16 @@ def bfs(graph, start, visited):
                 queue.append(i)
                 visited[i] = True
 
+def bfs(graph, start, visited):
+    queue = deque([start])
+    visited[start] = True
+    while queue:
+        v = queue.popleft()
+        for i in graph[v]:
+            if not visited[i]:
+                queue.append(i)
+                visited[i]=True
+
 #각 노드(인덱스)가 연결된 정보를 표현 (2차원 리스트)
 graph = [
     [],

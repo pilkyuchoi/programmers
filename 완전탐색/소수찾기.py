@@ -13,13 +13,13 @@
 # combinations_with_replacement('ABCD', 2) AA AB AC AD BB BC BD CC CD DD
 # 같은 글자 허용.
 
-
 #set 원소추가는 add, 여러개는 update, 삭제는 remove, discard(없어도 에러 안 남)
-
 
 from itertools import permutations, combinations
 import math
 
+#소수탐색은 2부터 int제곱근+1
+#int 하면 소수점 버림
 def isPrime(n):
     if n <= 1:
             return False
